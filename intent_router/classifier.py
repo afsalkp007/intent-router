@@ -42,7 +42,10 @@ class IntentClassifier:
     }
 
     HOSTILE_TRIGGERS = ["fraud", "scam", "lawsuit", "report to amex", "attorney", "unacceptable", "furious"]
-    FRUSTRATED_TRIGGERS = ["ridiculous", "waste of time", "broken again", "terrible", "disappointed", "annoying", "angry"]
+    FRUSTRATED_TRIGGERS = [
+        "ridiculous", "waste of time", "waste of money", "broken again", "terrible",
+        "disappointed", "annoying", "angry", "fed up", "useless",
+    ]
     POSITIVE_TRIGGERS = ["love your product", "great work", "awesome", "thank you", "kudos", "appreciate"]
 
     def classify(self, text: str) -> ClassificationResult:
