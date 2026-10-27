@@ -17,23 +17,27 @@ class IntentClassifier:
         IntentCategory.SECURITY_ALERT: [
             "breach", "unauthorized", "hacked", "compromised", "unknown ip",
             "suspicious login", "vulnerability", "leak", "security incident", "stolen",
+            "security alert", "credential",
         ],
         IntentCategory.CHURN_RISK: [
             "cancel my subscription", "canceling", "cancel account", "switching to",
             "moving to", "waste of money", "useless", "close my account", "leaving your platform",
-            "unsubscribe my team",
+            "unsubscribe", "cancel it", "cancel", "leave",
         ],
         IntentCategory.BILLING: [
             "refund", "double charge", "charged", "invoice", "billing",
             "credit card", "receipt", "overbilled", "payment failed", "stripe fee",
+            "overcharge", "charges", "payment",
         ],
         IntentCategory.BUG_REPORT: [
-            "crash", "error 500", "502 bad gateway", "broken", "bug", "fails to load",
-            "stack trace", "infinite loop", "blank screen", "corrupted", "not working",
+            "crash", "500", "502", "503", "504", "server error", "internal server error",
+            "bad gateway", "broken", "bug", "fails to load", "stack trace", "infinite loop",
+            "blank screen", "corrupted", "not working", "outage", "system down", "exception",
         ],
         IntentCategory.FEATURE_REQUEST: [
             "feature request", "would be great if", "can you add", "roadmap",
             "dark mode", "export to csv", "integration with", "support for", "wishlist",
+            "new feature", "enhancement",
         ],
     }
 
